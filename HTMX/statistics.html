@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <title>FOUR C++</title>
+</head>
+
+<script type="text/javascript">
+
+$(function() {
+
+	var data = [],
+		series = Math.floor(Math.random() * 6) + 3;
+
+	for (var i = 0; i < series; i++) {
+		data[i] = {
+			label: "Series" + (i + 1),
+			data: Math.floor(Math.random() * 100) + 1
+		}
+	}
+
+	var placeholder1 = $("#placeholder1");
+    var placeholder2 = $("#placeholder2");
+
+	placeholder1.unbind();
+	$.plot(placeholder1, data, {
+		series: {
+			pie: { 
+				show: true
+			}
+		}
+	});
+    
+    placeholder2.unbind();
+	$.plot(placeholder2, data, {
+		series: {
+			pie: { 
+				show: true
+			}
+		}
+	});
+});
+
+
+</script>
+
+<body>
+
+<!--Header-->
+<div class="fixed-header">
+    <div class="header">
+        <div class="logo left"></div>
+        <ul class="nav right">
+            <li class="active"><a href="#" title="">Trang chủ</a></li>
+            <li><a href="#" title="">Chuyên mục</a></li>
+            <li><a href="#" title="">Tìm kiếm</a></li>
+            <li><a href="#" title="">Giải toán</a></li>
+            <li><a href="#" title="">Xếp hạng</a></li>
+            <li><a href="#" title="">Thống kê</a></li>
+            <li><a href="#" title="">Liên hệ</a></li>
+        </ul>
+    </div>
+</div>
+<!--End Header-->
+
+<!--Wrapper-->
+<div class="wrapper">
+    
+    <div class="sidebar left">
+        <div class="box-user">
+            <div class="user">Hello, <span>ONEPRO166</span></div>
+            <ul class="list_info">
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-star"></div>
+                        <div class="text">Xếp hạng</div>
+                    </div>
+                    <div class="value">10</div>
+                </li>
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-ok"></div>
+                        <div class="text">Hoàn thành</div>
+                    </div>
+                    <div class="value">10</div>
+                </li>
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-thumbs-up"></div>
+                        <div class="text">Đã giải</div>
+                    </div>
+                    <div class="value">20</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="sb-box-rank">
+            <div class="title"><span>TOP 15</span></div>
+            <ul class="list_info">
+                <li class="rank-color-1">
+                    <div class="name_field">
+                        <div class="nummber">1</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-2">
+                    <div class="name_field">
+                        <div class="nummber">2</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-3">
+                    <div class="name_field">
+                        <div class="nummber">3</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-4">
+                    <div class="name_field">
+                        <div class="nummber">4</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-5">
+                    <div class="name_field">
+                        <div class="nummber">5</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-6">
+                    <div class="name_field">
+                        <div class="nummber">6</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-7">
+                    <div class="name_field">
+                        <div class="nummber">7</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-8">
+                    <div class="name_field">
+                        <div class="nummber">8</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-9">
+                    <div class="name_field">
+                        <div class="nummber">9</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-10">
+                    <div class="name_field">
+                        <div class="nummber">10</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-11">
+                    <div class="name_field">
+                        <div class="nummber">11</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-12">
+                    <div class="name_field">
+                        <div class="nummber">12</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-13">
+                    <div class="name_field">
+                        <div class="nummber">13</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-14">
+                    <div class="name_field">
+                        <div class="nummber">14</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-15">
+                    <div class="name_field">
+                        <div class="nummber">15</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Container-->
+    <div class="container">
+        
+		<div class="box-categories">
+            <!--Login-->
+            <div class="box-statistics-1">
+                <div class="info"><div class="icon"><span class="icon-user"></span></div><p>Submissions by Answer</p></div>
+        		<div class="demo-container">
+        			<div id="placeholder1" class="demo-placeholder"></div>
+        		</div>
+            </div>
+            <!--End Login-->
+            
+            <div class="clearAll"></div>
+            
+            <!--Register-->
+            <div class="box-statistics-2">
+                <div class="info"><div class="icon"><span class="icon-list-alt"></span></div><p>Problems Solved</p></div>
+                <div class="demo-container">
+        			<div id="placeholder2" class="demo-placeholder"></div>
+        		</div>
+            </div>
+            <!--End Register-->
+            
+        </div>
+    </div>
+    <!--End Container-->
+    
+    <div class="clearAll"></div>
+    
+</div>
+<!--End Wrapper-->				
+			
+<div id="footer" class="footer shadow-inner-top">
+	<div class="container">
+        <a href="http://sphere-research.com">Sphere Research Labs</a>.
+		Ideone is powered by 
+        <a href="http://sphere-research.com/">Sphere Engine&trade;</a>
+    					
+    	<p id="footer-links">
+    		<a href="/">Home</a>
+            <a href="/terms">Terms of use</a>
+    		<a href="/sphere-engine">API</a>
+    		<a href="#" data-toggle="modal" data-target="#lang-dialog">Language</a>  
+    		<a href="/faq">FAQ</a>
+    		<a href="/credits">Credits</a>
+    		<a href="/ideone/Tools/bug/form/1" id="show_bug_dialog" data-toggle="modal" data-target="#bug-dialog">Feedback &amp; Bugs</a>
+    		<span style="margin-left: 20px">
+                desktop
+                <a href="/switch/mobile/Lw==" class="margin-left">mobile</a>
+    	   </span>
+    	</p>
+	</div>
+</div>
+			
+			
+			
+
+</body>
+</html>
