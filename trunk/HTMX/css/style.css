@@ -680,6 +680,12 @@ a{ text-decoration: none; }
     left: 8px;
 }
 
+/*TIEN*/
+.dad{
+}
+/*END TIEN*/
+
+
 /*FOOTER*/
 #_container {
 	min-height: 100%;
@@ -717,4 +723,3 @@ a{ text-decoration: none; }
 #footer #footer-links a.margin-left {
 	margin-left: 6px;
 }
-
