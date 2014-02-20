@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <title>FOUR C++</title>
+</head>
+
+<body>
+
+<!--Header-->
+<div class="fixed-header">
+    <div class="header">
+        <div class="logo left"></div>
+        <ul class="nav right">
+            <li class="active"><a href="#" title="">Trang chủ</a></li>
+            <li><a href="#" title="">Chuyên mục</a></li>
+            <li><a href="#" title="">Tìm kiếm</a></li>
+            <li><a href="#" title="">Giải toán</a></li>
+            <li><a href="#" title="">Xếp hạng</a></li>
+            <li><a href="#" title="">Thống kê</a></li>
+            <li><a href="#" title="">Liên hệ</a></li>
+        </ul>
+    </div>
+</div>
+<!--End Header-->
+
+<!--Wrapper-->
+<div class="wrapper">
+    
+    <!--Login-->
+    <div class="box-login">
+        <div class="info"><div class="icon"><span class="icon-user"></span></div><p>ĐĂNG NHẬP</p></div>
+        <form id="_LoginForm" class="form-horizontal">
+            <div class="notice errors"></div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_login_username">Tên đăng nhập</label>
+                <div class="controls">
+                    <input type="text" name="username" id="_login_username" placeholder="Ex: onepro166" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_login_password">Mật khẩu</label>
+                <div class="controls">
+                    <input type="password" name="password" id="_login_password" placeholder="Ex: 123456" />
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"/> Ghi nhớ
+                    </label>
+                    <button type="submit" id="_bnt_login" class="btn btn-success">Đăng nhập</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--End Login-->
+    
+    <!--Register-->
+    <div class="box-register">
+        <div class="info"><div class="icon"><span class="icon-list-alt"></span></div><p>ĐĂNG KÝ</p></div>
+        <form id="_RegisterForm" class="form-horizontal">
+            <div class="notice errors"></div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_username">Tên đăng nhập</label>
+                <div class="controls">
+                    <input type="text" id="_username" name="username" placeholder="Ex: username" /> <span class="requied">*</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_password">Mật khẩu</label>
+                <div class="controls">
+                    <input type="password" id="_password" name="password" placeholder="Ex: 123456" /> <span class="requied">*</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_repassword">Xác nhận mật khẩu</label>
+                <div class="controls">
+                    <input type="password" id="_repassword" placeholder="Ex: 123456" /> <span class="requied">*</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_fullname">Họ tên</label>
+                <div class="controls">
+                    <input type="text" id="_fullname" name="fullname" placeholder="Ex: Phạm Đức Tiến" /> <span class="requied">*</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" style="text-align: left;" for="_email">Email</label>
+                <div class="controls">
+                    <input type="text" id="_email" name="email" placeholder="Ex: onepro166@gmail.com" /> <span class="requied">*</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" id="_rules"/> Tôi đồng ý với điều kiện và điều kiện của website
+                    </label>
+                    <button type="submit" id="_bnt_register" class="btn btn-primary">Đăng ký</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--End Register-->
+    
+    <div class="clearAll"></div>
+    
+</div>
+<!--End Wrapper-->
+
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <title>FOUR C++</title>
+</head>
+
+<body>
+
+<!--Header-->
+<div class="fixed-header">
+    <div class="header">
+        <div class="logo left"></div>
+        <ul class="nav right">
+            <li class="active"><a href="#" title="">Trang chủ</a></li>
+            <li><a href="#" title="">Chuyên mục</a></li>
+            <li><a href="#" title="">Tìm kiếm</a></li>
+            <li><a href="#" title="">Giải toán</a></li>
+            <li><a href="#" title="">Xếp hạng</a></li>
+            <li><a href="#" title="">Thống kê</a></li>
+            <li><a href="#" title="">Liên hệ</a></li>
+        </ul>
+    </div>
+</div>
+<!--End Header-->
+
+<!--Wrapper-->
+<div class="wrapper">
+    
+    <div class="sidebar left">
+        <div class="box-user">
+            <div class="user">Hello, <span>ONEPRO166</span></div>
+            <ul class="list_info">
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-star"></div>
+                        <div class="text">Xếp hạng</div>
+                    </div>
+                    <div class="value">10</div>
+                </li>
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-ok"></div>
+                        <div class="text">Hoàn thành</div>
+                    </div>
+                    <div class="value">10</div>
+                </li>
+                <li>
+                    <div class="name_field">
+                        <div class="icon icon-thumbs-up"></div>
+                        <div class="text">Đã giải</div>
+                    </div>
+                    <div class="value">20</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="sb-box-rank">
+            <div class="title"><span>TOP 15</span></div>
+            <ul class="list_info">
+                <li class="rank-color-1">
+                    <div class="name_field">
+                        <div class="nummber">1</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-2">
+                    <div class="name_field">
+                        <div class="nummber">2</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-3">
+                    <div class="name_field">
+                        <div class="nummber">3</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-4">
+                    <div class="name_field">
+                        <div class="nummber">4</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-5">
+                    <div class="name_field">
+                        <div class="nummber">5</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-6">
+                    <div class="name_field">
+                        <div class="nummber">6</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-7">
+                    <div class="name_field">
+                        <div class="nummber">7</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-8">
+                    <div class="name_field">
+                        <div class="nummber">8</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-9">
+                    <div class="name_field">
+                        <div class="nummber">9</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-10">
+                    <div class="name_field">
+                        <div class="nummber">10</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-11">
+                    <div class="name_field">
+                        <div class="nummber">11</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-12">
+                    <div class="name_field">
+                        <div class="nummber">12</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+                <li class="rank-color-13">
+                    <div class="name_field">
+                        <div class="nummber">13</div>
+                    </div>
+                    <div class="user">onepro166</div>
+                </li>
+                <li class="rank-color-14">
+                    <div class="name_field">
+                        <div class="nummber">14</div>
+                    </div>
+                    <div class="user">tienpham1606</div>
+                </li>
+                <li class="rank-color-15">
+                    <div class="name_field">
+                        <div class="nummber">15</div>
+                    </div>
+                    <div class="user">tinhtevn</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Container-->
+    <div class="container">
+        
+		<div class="box-categories">
+            <div class="info"><div class="icon"><span class="icon-edit"></span></div><p>SUBMIT</p></div>
+                        
+            <blockquote>
+                <p>Hãy gửi cho chúng tôi bài giải của bạn</p>
+                <small>Hãy kiểm tra thật kỹ bài giải trước khi gởi cho chúng tôi nhé ! :)</small>
+            </blockquote>
+			
+			<div id="category-list">
+				<ul>
+									<li class="category-1 odd">
+							<span>1</span>
+							<div>
+								<a href="/judge/en/problems/index/1">Beginner</a>                        <p>
+									Basic problems for anyone who has just started to program...                        </p>
+								<b>110 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-2 even">
+							<span>2</span>
+							<div>
+								<a href="/judge/en/problems/index/2">Ad-Hoc</a>                        <p>
+									Simulation Problems, Dates, Games and general Ad-Hoc...                        </p>
+								<b>111 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-3 odd">
+							<span>3</span>
+							<div>
+								<a href="/judge/en/problems/index/3">Strings</a>                        <p>
+									Palindromes, Frequency, Ad-Hoc, LCS, String Manipulation...                        </p>
+								<b>47 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-4 even">
+							<span>4</span>
+							<div>
+								<a href="/judge/en/problems/index/4">Data Structures and Libraries</a>                        <p>
+									Queue, Stack, Sort, Map, Set...                        </p>
+								<b>49 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-5 odd">
+							<span>5</span>
+							<div>
+								<a href="/judge/en/problems/index/5">Mathematics</a>                        <p>
+									Number Theory, Prime Numbers, Combinatorics, BigInteger...                        </p>
+								<b>68 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-6 even">
+							<span>6</span>
+							<div>
+								<a href="/judge/en/problems/index/6">Paradigms</a>                        <p>
+									Dynamic Programming, Binary Search, Greedy, Backtracking ...                        </p>
+								<b>47 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-7 odd">
+							<span>7</span>
+							<div>
+								<a href="/judge/en/problems/index/7">Graph</a>                        <p>
+									Flood Fill, MST, SSSP, DAG, Maximum Flow, Tree...                        </p>
+								<b>58 PROBLEMS</b>
+							</div>
+						</li>
+									<li class="category-8 even">
+							<span>8</span>
+							<div>
+								<a href="/judge/en/problems/index/8">Computational Geometry</a>                        <p>
+									Points and Lines, Polygon...                        </p>
+								<b>28 PROBLEMS</b>
+							</div>
+						</li>
+						
+					<li class="category-all">
+						<span></span>
+						<div>
+							<a href="/judge/en/problems/all">List All</a>                    <p>
+								All the problems of the website in one place.                        <b>518 PROBLEMS</b>
+							</p>
+						</div>
+					</li>
+
+					<li class="category-recommended">
+						<span></span>
+						<div>
+							<a href="/judge/en/problems/recommended">Recommended</a>                    <p>
+								Suggested problems for you to solve.                        <b>JUST FOR YOU</b>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+            <table class="table table-striped">
+				<thead>
+					<tr>
+					  <th>#</th>
+					  <th>Name</th>
+					  <th>Câu hỏi</th>
+					  <th>Solved</th>
+					  <th>Level</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+					<tr>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					  <td>...</td>
+					</tr>
+				</tbody>
+				<thead>
+					<tr>
+					  <th colspan="5">
+						<div class="pagination"></div>
+					  </th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		
+    </div>
+    <!--End Container-->
+    
+    <div class="clearAll"></div>
+    
+</div>
+<!--End Wrapper-->				
+			
+<div id="footer" class="footer shadow-inner-top">
+	<div class="container">
+        <a href="http://sphere-research.com">Sphere Research Labs</a>.
+		Ideone is powered by 
+        <a href="http://sphere-research.com/">Sphere Engine&trade;</a>
+    					
+    	<p id="footer-links">
+    		<a href="/">Home</a>
+            <a href="/terms">Terms of use</a>
+    		<a href="/sphere-engine">API</a>
+    		<a href="#" data-toggle="modal" data-target="#lang-dialog">Language</a>  
+    		<a href="/faq">FAQ</a>
+    		<a href="/credits">Credits</a>
+    		<a href="/ideone/Tools/bug/form/1" id="show_bug_dialog" data-toggle="modal" data-target="#bug-dialog">Feedback &amp; Bugs</a>
+    		<span style="margin-left: 20px">
+                desktop
+                <a href="/switch/mobile/Lw==" class="margin-left">mobile</a>
+    	   </span>
+    	</p>
+	</div>
+</div>
+			
+			
+			
+
+</body>
+</html>
